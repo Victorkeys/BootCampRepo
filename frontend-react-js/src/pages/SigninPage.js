@@ -10,10 +10,10 @@ export default function SigninPage() {
 
   const [email, setEmail] = React.useState('');
   const [password, setPassword] = React.useState('');
-  const [errors, setErrors] = React.useState('');
+  const [cognitoErrors, setCognitoErrors] = React.useState('');
 
   const onsubmit = async (event) => {
-    setErrors('')
+    setCognitoErrors('')
     event.preventDefault();
     try {
       Auth.signIn(email, password)
@@ -30,6 +30,7 @@ export default function SigninPage() {
     }
     return false
   }
+
   
   let errors;
   if (cognitoErrors){
