@@ -20,7 +20,7 @@ tasks:
     init: |
       pip install Boto3
       pip install lib
-
+      
 vscode:
   extensions:
     - 42Crunch.vscode-openapi
