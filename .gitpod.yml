@@ -16,10 +16,11 @@ tasks:
       sudo apt update
       sudo apt install -y postgresql-client-13 libpq-dev
 
-  - name: Boto3, lib
+  - name: Boto3, db.py
     init: |
       pip install Boto3
-      pip install lib
+      pip install db.py
+      
       
 vscode:
   extensions:
